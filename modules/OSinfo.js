@@ -1,5 +1,7 @@
 var os = require('os');
 var colors = require('colors');
+var timeFormat = require('./timeFormat');
+timeFormat.print();
 
 function getOSinfo() {
     var type = os.type();
@@ -22,5 +24,4 @@ function getOSinfo() {
 
 exports.print = getOSinfo;
 
-var timeFormat = require('./timeFormat');
-timeFormat.print();
+
