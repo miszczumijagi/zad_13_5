@@ -15,12 +15,12 @@ function getOSinfo() {
     console.log('System:'.gray, type);
     console.log('Release:'.red, release);
     console.log('CPU model:'.blue, cpu);
-    console.log('Uptime: '.green, timeFormating());
+    console.log('Uptime: '.green, timeFormat.print());
     console.log('User name:'.yellow, userInfo.username);
     console.log('Home dir:', userInfo.homedir);
 };
 
 exports.print = getOSinfo;
 
-var timeFormat = require('timeFormat');
+var timeFormat = require('./timeFormat');
 timeFormat.print();
